@@ -20,9 +20,9 @@ Rails 2.2 supplies an easy system for internationalization (or i18n, for those o
 
 * Lead Contributors: Rails i18 Team
 * More information :
-    * [Official Rails i18 website](http://rails-i18n.org)
-    * [Finally. Ruby on Rails gets internationalized](https://web.archive.org/web/20140407075019/http://www.artweb-design.de/2008/7/18/finally-ruby-on-rails-gets-internationalized)
-    * [Localizing Rails : Demo application](https://github.com/clemens/i18n_demo_app)
+  * [Official Rails i18 website](http://rails-i18n.org)
+  * [Finally. Ruby on Rails gets internationalized](https://web.archive.org/web/20140407075019/http://www.artweb-design.de/2008/7/18/finally-ruby-on-rails-gets-internationalized)
+  * [Localizing Rails : Demo application](https://github.com/clemens/i18n_demo_app)
 
 ### Compatibility with Ruby 1.9 and JRuby
 
@@ -60,8 +60,8 @@ This will put the guides inside `Rails.root/doc/guides` and you may start surfin
 * Lead Contributors: [Rails Documentation Team](credits.html)
 * Major contributions from [Xavier Noria](http://advogato.org/person/fxn/diary.html) and [Hongli Lai](http://izumi.plan99.net/blog/).
 * More information:
-    * [Rails Guides hackfest](http://hackfest.rubyonrails.org/guide)
-    * [Help improve Rails documentation on Git branch](http://weblog.rubyonrails.org/2008/5/2/help-improve-rails-documentation-on-git-branch)
+  * [Rails Guides hackfest](http://hackfest.rubyonrails.org/guide)
+  * [Help improve Rails documentation on Git branch](http://weblog.rubyonrails.org/2008/5/2/help-improve-rails-documentation-on-git-branch)
 
 Better integration with HTTP : Out of the box ETag support
 ----------------------------------------------------------
@@ -112,9 +112,9 @@ config.threadsafe!
 ```
 
 * More information :
-    * [Thread safety for your Rails](http://m.onkey.org/2008/10/23/thread-safety-for-your-rails)
-    * [Thread safety project announcement](http://weblog.rubyonrails.org/2008/8/16/josh-peek-officially-joins-the-rails-core)
-    * [Q/A: What Thread-safe Rails Means](http://blog.headius.com/2008/08/qa-what-thread-safe-rails-means.html)
+  * [Thread safety for your Rails](http://m.onkey.org/2008/10/23/thread-safety-for-your-rails)
+  * [Thread safety project announcement](http://weblog.rubyonrails.org/2008/8/16/josh-peek-officially-joins-the-rails-core)
+  * [Q/A: What Thread-safe Rails Means](http://blog.headius.com/2008/08/qa-what-thread-safe-rails-means.html)
 
 Active Record
 -------------
@@ -127,8 +127,8 @@ Historically, multiple-step Rails migrations have been a source of trouble. If s
 
 * Lead Contributor: [Adam Wiggins](http://adam.heroku.com/)
 * More information:
-    * [DDL Transactions](http://adam.heroku.com/past/2008/9/3/ddl_transactions/)
-    * [A major milestone for DB2 on Rails](http://db2onrails.com/2008/11/08/a-major-milestone-for-db2-on-rails/)
+  * [DDL Transactions](http://adam.heroku.com/past/2008/9/3/ddl_transactions/)
+  * [A major milestone for DB2 on Rails](http://db2onrails.com/2008/11/08/a-major-milestone-for-db2-on-rails/)
 
 ### Connection Pooling
 
@@ -145,7 +145,7 @@ development:
 
 * Lead Contributor: [Nick Sieger](http://blog.nicksieger.com/)
 * More information:
-    * [What's New in Edge Rails: Connection Pools](http://archives.ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-connection-pools)
+  * [What's New in Edge Rails: Connection Pools](http://archives.ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-connection-pools)
 
 ### Hashes for Join Table Conditions
 
@@ -165,7 +165,7 @@ Product.all(:joins => :photos, :conditions => { :photos => { :copyright => false
 ```
 
 * More information:
-    * [What's New in Edge Rails: Easy Join Table Conditions](http://archives.ryandaigle.com/articles/2008/7/7/what-s-new-in-edge-rails-easy-join-table-conditions)
+  * [What's New in Edge Rails: Easy Join Table Conditions](http://archives.ryandaigle.com/articles/2008/7/7/what-s-new-in-edge-rails-easy-join-table-conditions)
 
 ### New Dynamic Finders
 
@@ -199,7 +199,7 @@ Active Record association proxies now respect the scope of methods on the proxie
 
 * Lead Contributor: Adam Milligan
 * More information:
-    * [Rails 2.2 Change: Private Methods on Association Proxies are Private](http://afreshcup.com/2008/10/24/rails-22-change-private-methods-on-association-proxies-are-private/)
+  * [Rails 2.2 Change: Private Methods on Association Proxies are Private](http://afreshcup.com/2008/10/24/rails-22-change-private-methods-on-association-proxies-are-private/)
 
 ### Other Active Record Changes
 
@@ -237,8 +237,8 @@ This will enable recognition of (among others) these routes:
 
 * Lead Contributor: [S. Brent Faulkner](http://www.unwwwired.net/)
 * More information:
-    * [Rails Routing from the Outside In](routing.html#nested-resources)
-    * [What's New in Edge Rails: Shallow Routes](http://archives.ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-shallow-routes)
+  * [Rails Routing from the Outside In](routing.html#nested-resources)
+  * [What's New in Edge Rails: Shallow Routes](http://archives.ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-shallow-routes)
 
 ### Method Arrays for Member or Collection Routes
 
@@ -286,7 +286,7 @@ Action Mailer
 Action Mailer now supports mailer layouts. You can make your HTML emails as pretty as your in-browser views by supplying an appropriately-named layout - for example, the `CustomerMailer` class expects to use `layouts/customer_mailer.html.erb`.
 
 * More information:
-    * [What's New in Edge Rails: Mailer Layouts](http://archives.ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-mailer-layouts)
+  * [What's New in Edge Rails: Mailer Layouts](http://archives.ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-mailer-layouts)
 
 Action Mailer now offers built-in support for GMail's SMTP servers, by turning on STARTTLS automatically. This requires Ruby 1.8.7 to be installed.
 
@@ -320,8 +320,8 @@ Other features of memoization include `unmemoize`, `unmemoize_all`, and `memoize
 
 * Lead Contributor: [Josh Peek](http://joshpeek.com/)
 * More information:
-    * [What's New in Edge Rails: Easy Memoization](http://archives.ryandaigle.com/articles/2008/7/16/what-s-new-in-edge-rails-memoization)
-    * [Memo-what? A Guide to Memoization](http://www.railway.at/articles/2008/09/20/a-guide-to-memoization)
+  * [What's New in Edge Rails: Easy Memoization](http://archives.ryandaigle.com/articles/2008/7/16/what-s-new-in-edge-rails-memoization)
+  * [Memo-what? A Guide to Memoization](http://www.railway.at/articles/2008/09/20/a-guide-to-memoization)
 
 ### each_with_object
 
@@ -390,9 +390,9 @@ You can unpack or install a single gem by specifying `GEM=_gem_name_` on the com
 
 * Lead Contributor: [Matt Jones](https://github.com/al2o3cr)
 * More information:
-    * [What's New in Edge Rails: Gem Dependencies](http://archives.ryandaigle.com/articles/2008/4/1/what-s-new-in-edge-rails-gem-dependencies)
-    * [Rails 2.1.2 and 2.2RC1: Update Your RubyGems](http://afreshcup.com/2008/10/25/rails-212-and-22rc1-update-your-rubygems/)
-    * [Detailed discussion on Lighthouse](http://rails.lighthouseapp.com/projects/8994-ruby-on-rails/tickets/1128)
+  * [What's New in Edge Rails: Gem Dependencies](http://archives.ryandaigle.com/articles/2008/4/1/what-s-new-in-edge-rails-gem-dependencies)
+  * [Rails 2.1.2 and 2.2RC1: Update Your RubyGems](http://afreshcup.com/2008/10/25/rails-212-and-22rc1-update-your-rubygems/)
+  * [Detailed discussion on Lighthouse](http://rails.lighthouseapp.com/projects/8994-ruby-on-rails/tickets/1128)
 
 ### Other Railties Changes
 

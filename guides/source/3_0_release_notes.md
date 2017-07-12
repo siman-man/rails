@@ -367,15 +367,15 @@ Validations have been moved from Active Record into Active Model, providing an i
 
 * There is now a `validates :attribute, options_hash` shortcut method that allows you to pass options for all the validates class methods, you can pass more than one option to a validate method.
 * The `validates` method has the following options:
-    * `:acceptance => Boolean`.
-    * `:confirmation => Boolean`.
-    * `:exclusion => { :in => Enumerable }`.
-    * `:inclusion => { :in => Enumerable }`.
-    * `:format => { :with => Regexp, :on => :create }`.
-    * `:length => { :maximum => Fixnum }`.
-    * `:numericality => Boolean`.
-    * `:presence => Boolean`.
-    * `:uniqueness => Boolean`.
+  * `:acceptance => Boolean`.
+  * `:confirmation => Boolean`.
+  * `:exclusion => { :in => Enumerable }`.
+  * `:inclusion => { :in => Enumerable }`.
+  * `:format => { :with => Regexp, :on => :create }`.
+  * `:length => { :maximum => Fixnum }`.
+  * `:numericality => Boolean`.
+  * `:presence => Boolean`.
+  * `:uniqueness => Boolean`.
 
 NOTE: All the Rails version 2.3 style validation methods are still supported in Rails 3.0, the new validates method is designed as an additional aid in your model validations, not a replacement for the existing API.
 

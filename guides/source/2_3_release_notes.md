@@ -157,8 +157,8 @@ end
 Note that you should only use this method for batch processing: for small numbers of records (less than 1000), you should just use the regular find methods with your own loop.
 
 * More Information (at that point the convenience method was called just `each`):
-    * [Rails 2.3: Batch Finding](http://afreshcup.com/2009/02/23/rails-23-batch-finding/)
-    * [What's New in Edge Rails: Batched Find](http://archives.ryandaigle.com/articles/2009/2/23/what-s-new-in-edge-rails-batched-find)
+  * [Rails 2.3: Batch Finding](http://afreshcup.com/2009/02/23/rails-23-batch-finding/)
+  * [What's New in Edge Rails: Batched Find](http://archives.ryandaigle.com/articles/2009/2/23/what-s-new-in-edge-rails-batched-find)
 
 ### Multiple Conditions for Callbacks
 
@@ -187,8 +187,8 @@ MySQL supports a reconnect flag in its connections - if set to true, then the cl
 
 * Lead Contributor: [Dov Murik](http://twitter.com/dubek)
 * More information:
-    * [Controlling Automatic Reconnection Behavior](http://dev.mysql.com/doc/refman/5.6/en/auto-reconnect.html)
-    * [MySQL auto-reconnect revisited](http://groups.google.com/group/rubyonrails-core/browse_thread/thread/49d2a7e9c96cb9f4)
+  * [Controlling Automatic Reconnection Behavior](http://dev.mysql.com/doc/refman/5.6/en/auto-reconnect.html)
+  * [MySQL auto-reconnect revisited](http://groups.google.com/group/rubyonrails-core/browse_thread/thread/49d2a7e9c96cb9f4)
 
 ### Other Active Record Changes
 
@@ -234,8 +234,8 @@ Rails chooses between file, template, and action depending on whether there is a
 If you're one of the people who has always been bothered by the special-case naming of `application.rb`, rejoice! It's been reworked to be application_controller.rb in Rails 2.3. In addition, there's a new rake task, `rake rails:update:application_controller` to do this automatically for you - and it will be run as part of the normal `rake rails:update` process.
 
 * More Information:
-    * [The Death of Application.rb](http://afreshcup.com/2008/11/17/rails-2x-the-death-of-applicationrb/)
-    * [What's New in Edge Rails: Application.rb Duality is no More](http://archives.ryandaigle.com/articles/2008/11/19/what-s-new-in-edge-rails-application-rb-duality-is-no-more)
+  * [The Death of Application.rb](http://afreshcup.com/2008/11/17/rails-2x-the-death-of-applicationrb/)
+  * [What's New in Edge Rails: Application.rb Duality is no More](http://archives.ryandaigle.com/articles/2008/11/19/what-s-new-in-edge-rails-application-rb-duality-is-no-more)
 
 ### HTTP Digest Authentication Support
 
@@ -376,9 +376,9 @@ You can write this view in Rails 2.3:
 
 * Lead Contributor: [Eloy Duran](http://superalloy.nl/)
 * More Information:
-    * [Nested Model Forms](http://weblog.rubyonrails.org/2009/1/26/nested-model-forms)
-    * [complex-form-examples](https://github.com/alloy/complex-form-examples)
-    * [What's New in Edge Rails: Nested Object Forms](http://archives.ryandaigle.com/articles/2009/2/1/what-s-new-in-edge-rails-nested-attributes)
+  * [Nested Model Forms](http://weblog.rubyonrails.org/2009/1/26/nested-model-forms)
+  * [complex-form-examples](https://github.com/alloy/complex-form-examples)
+  * [What's New in Edge Rails: Nested Object Forms](http://archives.ryandaigle.com/articles/2009/2/1/what-s-new-in-edge-rails-nested-attributes)
 
 ### Smart Rendering of Partials
 
@@ -552,10 +552,10 @@ In addition to the Rack changes covered above, Railties (the core code of Rails 
 Rails Metal is a new mechanism that provides superfast endpoints inside of your Rails applications. Metal classes bypass routing and Action Controller to give you raw speed (at the cost of all the things in Action Controller, of course). This builds on all of the recent foundation work to make Rails a Rack application with an exposed middleware stack. Metal endpoints can be loaded from your application or from plugins.
 
 * More Information:
-    * [Introducing Rails Metal](http://weblog.rubyonrails.org/2008/12/17/introducing-rails-metal)
-    * [Rails Metal: a micro-framework with the power of Rails](http://soylentfoo.jnewland.com/articles/2008/12/16/rails-metal-a-micro-framework-with-the-power-of-rails-m)
-    * [Metal: Super-fast Endpoints within your Rails Apps](http://www.railsinside.com/deployment/180-metal-super-fast-endpoints-within-your-rails-apps.html)
-    * [What's New in Edge Rails: Rails Metal](http://archives.ryandaigle.com/articles/2008/12/18/what-s-new-in-edge-rails-rails-metal)
+  * [Introducing Rails Metal](http://weblog.rubyonrails.org/2008/12/17/introducing-rails-metal)
+  * [Rails Metal: a micro-framework with the power of Rails](http://soylentfoo.jnewland.com/articles/2008/12/16/rails-metal-a-micro-framework-with-the-power-of-rails-m)
+  * [Metal: Super-fast Endpoints within your Rails Apps](http://www.railsinside.com/deployment/180-metal-super-fast-endpoints-within-your-rails-apps.html)
+  * [What's New in Edge Rails: Rails Metal](http://archives.ryandaigle.com/articles/2008/12/18/what-s-new-in-edge-rails-rails-metal)
 
 ### Application Templates
 

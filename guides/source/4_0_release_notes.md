@@ -10,10 +10,7 @@ Highlights in Rails 4.0:
 * Turbolinks
 * Russian Doll Caching
 
-These release notes cover only the major changes. To learn about various bug
-fixes and changes, please refer to the change logs or check out the [list of
-commits](https://github.com/rails/rails/commits/4-0-stable) in the main Rails
-repository on GitHub.
+These release notes cover only the major changes. To learn about various bug fixes and changes, please refer to the change logs or check out the [list of commits](https://github.com/rails/rails/commits/4-0-stable) in the main Rails repository on GitHub.
 
 --------------------------------------------------------------------------------
 
@@ -81,17 +78,17 @@ Major Features
 
 ### General
 
- * **ActiveModel::Model** ([commit](https://github.com/rails/rails/commit/3b822e91d1a6c4eab0064989bbd07aae3a6d0d08)) - `ActiveModel::Model`, a mixin to make normal Ruby objects to work with ActionPack out of box (ex. for `form_for`)
- * **New scope API** ([commit](https://github.com/rails/rails/commit/50cbc03d18c5984347965a94027879623fc44cce)) - Scopes must always use callables.
- * **Schema cache dump** ([commit](https://github.com/rails/rails/commit/5ca4fc95818047108e69e22d200e7a4a22969477)) - To improve Rails boot time, instead of loading the schema directly from the database, load the schema from a dump file.
- * **Support for specifying transaction isolation level** ([commit](https://github.com/rails/rails/commit/392eeecc11a291e406db927a18b75f41b2658253)) - Choose whether repeatable reads or improved performance (less locking) is more important.
- * **Dalli** ([commit](https://github.com/rails/rails/commit/82663306f428a5bbc90c511458432afb26d2f238)) - Use Dalli memcache client for the memcache store.
- * **Notifications start &amp; finish** ([commit](https://github.com/rails/rails/commit/f08f8750a512f741acb004d0cebe210c5f949f28)) - Active Support instrumentation reports start and finish notifications to subscribers.
- * **Thread safe by default** ([commit](https://github.com/rails/rails/commit/5d416b907864d99af55ebaa400fff217e17570cd)) - Rails can run in threaded app servers without additional configuration.
+* **ActiveModel::Model** ([commit](https://github.com/rails/rails/commit/3b822e91d1a6c4eab0064989bbd07aae3a6d0d08)) - `ActiveModel::Model`, a mixin to make normal Ruby objects to work with ActionPack out of box (ex. for `form_for`)
+* **New scope API** ([commit](https://github.com/rails/rails/commit/50cbc03d18c5984347965a94027879623fc44cce)) - Scopes must always use callables.
+* **Schema cache dump** ([commit](https://github.com/rails/rails/commit/5ca4fc95818047108e69e22d200e7a4a22969477)) - To improve Rails boot time, instead of loading the schema directly from the database, load the schema from a dump file.
+* **Support for specifying transaction isolation level** ([commit](https://github.com/rails/rails/commit/392eeecc11a291e406db927a18b75f41b2658253)) - Choose whether repeatable reads or improved performance (less locking) is more important.
+* **Dalli** ([commit](https://github.com/rails/rails/commit/82663306f428a5bbc90c511458432afb26d2f238)) - Use Dalli memcache client for the memcache store.
+* **Notifications start &amp; finish** ([commit](https://github.com/rails/rails/commit/f08f8750a512f741acb004d0cebe210c5f949f28)) - Active Support instrumentation reports start and finish notifications to subscribers.
+* **Thread safe by default** ([commit](https://github.com/rails/rails/commit/5d416b907864d99af55ebaa400fff217e17570cd)) - Rails can run in threaded app servers without additional configuration.
 
 NOTE: Check that the gems you are using are threadsafe.
 
- * **PATCH verb** ([commit](https://github.com/rails/rails/commit/eed9f2539e3ab5a68e798802f464b8e4e95e619e)) - In Rails, PATCH replaces PUT. PATCH is used for partial updates of resources.
+* **PATCH verb** ([commit](https://github.com/rails/rails/commit/eed9f2539e3ab5a68e798802f464b8e4e95e619e)) - In Rails, PATCH replaces PUT. PATCH is used for partial updates of resources.
 
 ### Security
 
@@ -134,9 +131,7 @@ Please refer to the [Changelog](https://github.com/rails/rails/blob/4-0-stable/r
 
 * Threadsafe on by default
 
-* Ability to use a custom builder by passing `--builder` (or `-b`) to
-  `rails new` has been removed. Consider using application templates
-  instead. ([Pull Request](https://github.com/rails/rails/pull/9401))
+* Ability to use a custom builder by passing `--builder` (or `-b`) to `rails new` has been removed. Consider using application templates instead. ([Pull Request](https://github.com/rails/rails/pull/9401))
 
 ### Deprecations
 
@@ -181,8 +176,7 @@ Please refer to the [Changelog](https://github.com/rails/rails/blob/4-0-stable/a
 
 * `Object#try` will now return nil instead of raise a NoMethodError if the receiving object does not implement the method, but you can still get the old behavior by using the new `Object#try!`.
 
-* `String#to_date` now raises `ArgumentError: invalid date` instead of `NoMethodError: undefined method 'div' for nil:NilClass`
-  when given an invalid date. It is now the same as `Date.parse`, and it accepts more invalid dates than 3.x, such as:
+* `String#to_date` now raises `ArgumentError: invalid date` instead of `NoMethodError: undefined method 'div' for nil:NilClass` when given an invalid date. It is now the same as `Date.parse`, and it accepts more invalid dates than 3.x, such as:
 
   ```ruby
   # ActiveSupport 3.x
@@ -229,16 +223,11 @@ Please refer to the [Changelog](https://github.com/rails/rails/blob/4-0-stable/a
 
 * Improve ways to write `change` migrations, making the old `up` & `down` methods no longer necessary.
 
-    * The methods `drop_table` and `remove_column` are now reversible, as long as the necessary information is given.
-      The method `remove_column` used to accept multiple column names; instead use `remove_columns` (which is not revertible).
-      The method `change_table` is also reversible, as long as its block doesn't call `remove`, `change` or `change_default`
+  * The methods `drop_table` and `remove_column` are now reversible, as long as the necessary information is given. The method `remove_column` used to accept multiple column names; instead use `remove_columns` (which is not revertible). The method `change_table` is also reversible, as long as its block doesn't call `remove`, `change` or `change_default`
 
-    * New method `reversible` makes it possible to specify code to be run when migrating up or down.
-      See the [Guide on Migration](https://github.com/rails/rails/blob/master/guides/source/active_record_migrations.md#using-reversible)
+  * New method `reversible` makes it possible to specify code to be run when migrating up or down. See the [Guide on Migration](https://github.com/rails/rails/blob/master/guides/source/active_record_migrations.md#using-reversible)
 
-    * New method `revert` will revert a whole migration or the given block.
-      If migrating down, the given migration / block is run normally.
-      See the [Guide on Migration](https://github.com/rails/rails/blob/master/guides/source/active_record_migrations.md#reverting-previous-migrations)
+  * New method `revert` will revert a whole migration or the given block. If migrating down, the given migration / block is run normally. See the [Guide on Migration](https://github.com/rails/rails/blob/master/guides/source/active_record_migrations.md#reverting-previous-migrations)
 
 * Adds PostgreSQL array type support. Any datatype can be used to create an array column, with full migration and schema dumper support.
 
@@ -268,8 +257,7 @@ Please refer to the [Changelog](https://github.com/rails/rails/blob/4-0-stable/a
 
 * Deprecated the old-style hash based finder API. This means that methods which previously accepted "finder options" no longer do.
 
-* All dynamic methods except for `find_by_...` and `find_by_...!` are deprecated. Here's
-  how you can rewrite the code:
+* All dynamic methods except for `find_by_...` and `find_by_...!` are deprecated. Here's how you can rewrite the code:
 
       * `find_all_by_...` can be rewritten using `where(...)`.
       * `find_last_by_...` can be rewritten using `where(...).last`.
